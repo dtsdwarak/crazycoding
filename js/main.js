@@ -1,23 +1,23 @@
+
 $("document").ready(function(){
-/*$(".profile-pic").animate({
-	left:"140px",
-	top:"25px",
-	},2000);*/
-rotate(0);	
-	function rotate(degree){
-		console.log(degree);
-		$(".profile-pic").css({"-webkit-transform":"rotate("+degree+"deg)"});
-		if(degree<360){
-			setTimeout(function(){rotate(degree+15);},100);
+	$("a[href^=#]").click(function(e){
+		e.preventDefault();
+			var target=$(this).attr("href");
+			console.log(target);
+				var $target = $(target);
+				$("html,body").animate({
+				'scrollTop': $target.offset().top
+			},2000);
+	});
+	var headerTop = $("#header").offset().top;
+	$(window).scroll(function(){
+		var currentScroll = $(window).scrollTop();
+		console.log(currentScroll);
+		if(currentScroll>=headerTop){
+			$("#header").addClass("fixed");
 		}
 		else{
-			$(".profile-pic").animate({
-				left:"140px",
-				top:"25px"
-			},500,function(){
-				$(".name").fadeIn(2000);
-				setTimeout(function(){$(".tagline").fadeIn(2000);},1500);
-			});
+			$("#header").removeClass("fixed");
 		}
-	}
+	});
 });

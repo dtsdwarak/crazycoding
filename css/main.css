@@ -1,98 +1,266 @@
 body{
 	margin:0px;
-	color:#fff;
-	background:#000;
+	color:#000;
+	font: 400 16px 'Bree Serif', Georgia, serif;
 }
 
-.home{
-	min-height:600px;
-	background:#000;
-}
-
-.container{
+h1{font: 400 35px 'Bree Serif', Georgia, serif; color:#ffffff;}
+h2{font: 400 18px/22px 'Bree Serif', Georgia, serif; color:#ffffff;}
+h3{font: 400 14px/16px 'Bree Serif', Georgia, serif; color:#ffffff;}
+ul{margin:0px; padding:0px;}
+a {text-decoration:none; color:#6a6969;}
+a:hover {color:#979797;}
+a img{border:0px;}
+p{font-size:16px;}
+#container{
 	width:100%;
-	padding:0px 0px 0px 0px;
+	background:#fffffff;
+	overflow:auto;
+	padding-bottom:100px;
 }
 
-.profile-pic{
-	width:170px;
-	height:300px;
-	border:10px solid #fff;
-	border-radius:10px 10px 10px 10px;
-	-webkit-transform:rotate(27deg);
-	position:relative;
-	left:0px;
-	float:left;
-}
-
-
-.profile-pic:hover{
-	width:350px;
-	height:500px;
-	-webkit-transform:rotate(27deg);
-}
-
-.profile-pic img{
-	max-width:100%;
-}
-
-.name,.tagline{
-	display:none;
-	color:#fff;
-	font-style:italic;
-	font-size:65px;
-    display: none;
-    color: #fff;
-    font-style: italic;
-    font-size: 35px;
+#home {
+    height: 100%;
+    background: url(../images/bg.jpg);
+    background-size: 100% 100%;
+    float: left;
+    width: 100%;
+    opacity: 0.8;
+    min-height: 590px;
+    clear: both;
+    z-index: 1;
     position: relative;
-    top: 230px;
-    left: 180px;
 }
 
-.tagline{
-	font-style:35px;
-	top:240px;
+#home .intro {
+    border: 4px solid #000;
+    width: 630px;
+    border-radius: 15px;
+    height: 335px;
+    padding: 10px;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    color: #000000;
+    background: #ffffff;
+}
+.intro .text-right h1 {
+    margin: 0px;
+	color:#000;
 }
 
-.about{
-	background-color:#000;
-	color:#fff;
-	z-index:1001;
+.intro img.dp {
+    width: 125px;
+    border-radius: 100%;
+    float: left;
+    clear: none;
+    opacity: 1;
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
 }
 
-.sub-sections{
-	height:300px;
-	margin:0 auto;
-}
-.image-left{
+.intro  .text-right{
 	float:left;
-	width:240px;
-	height:240px;
-	background-size:contain !important;
-	margin:10px 20px 30px 60px;
-	border-radius:40px;
+	clear:none;
+	width:71%;
+	padding-left:40px;
+}
+.intro  .text-right p.designation{
+	font-size: 20px;
+    margin: 5px;
+	color:#DC3939;
 }
 
-.text-right{
-	font-size:28px;
+.intro  .text-right p{
+	color:#736C6C;
+	font: 400 16px 'Bree Serif', Georgia, serif;
+}
+
+.know-more {
+    position: absolute;
+    right: 40%;
+    top: 40%;
+	z-index: 1;
+}
+
+.know-more .hover-button{
+	cursor:pointer;
+    background: #000;
+    width: 100px;
+    height: 66px;
+    border-radius: 100%;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 25px 0px 0px 25px;
+}
+
+#knowmore-menu{
+	display:none;
+}
+
+.know-more .hover-button:hover #knowmore-menu{
+	display:block;
+	top: -112px;
+    position: relative;
+    width: 120px;
+    left: 95px;
+}
+
+.know-more .hover-button:hover #knowmore-menu li {
+    background: #000;
+    margin: 0px 10px 0px 0px;
+    border-bottom: 2px solid #F7A137;
+    list-style: none;
+    color: #ffffff;
+    width: 120px;
+    height: 50px;
+    padding: 10px 0px 0px 0px;
+    border-radius: 0px 90% 90% 0;
+}
+
+.know-more .hover-button:hover #knowmore-menu li a {
+    color: #ffffff;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    padding: 10px 16px 0px 16px;
+}
+
+#header {
+    width: 100%;
+    height: 65px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+}
+
+#header.fixed{
+	position:fixed;
+	top:0px;
+}
+
+#header #main-menu{float:right; padding:20px 20px 0px 0px;}
+#header #main-menu li{
 	float:left;
-	padding:0px 0px 0px 0px;
+	color:#ffffff;
+	list-style:none;
+	margin-left:27px;
+	font: 400 16px/20px 'Bree Serif', Georgia, serif;
 }
 
-.profession .image-left{
-	background:url("../images/profession.png");
+#header #main-menu li a{
+	color:#ffffff;
 }
 
-.education .image-left{
-	background:url("../images/education.jpg");
-	    background-position: 20px 0px;
+#header #main-menu li a:hover{
+	font-weight:bold;
 }
 
-.skills .image-left{
-	background:url("../images/skills.jpg");
+.grid_4 {
+    width: 380px;
+}
+[class*="grid_"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+}
+.header1 {
+    margin: 20px 0px 39px 20px;
+    text-align: center;
 }
 
-.interests .image-left{
-	background:url("../images/interests.jpg");
+.header1 h2 {
+    font: 300 35px/35px "Open Sans",sans-serif;
+    text-transform: uppercase;
+    color: #DC3939;
+}
+
+.grid_2 {
+    width: 340px;
+}
+[class*="grid_"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+}
+
+.post1 img {
+    margin-top: 6px;
+    border-radius: 1000px;
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.post2 .slogan {
+    padding-left: 134px;
+    position: relative;
+ margin-top: -4px;
+}
+
+.post2 .slogan:before {
+    left: 0;
+    top: -25px;
+    content: '2';
+    font: 300 226px/226px "Open Sans",sans-serif;
+    color: #31353d;
+    position: absolute;
+}
+
+.post2 .slogan span {
+    display: block;
+    font: 300 60px/60px "Open Sans",sans-serif;
+    text-transform: uppercase;
+    color: #c1c2c4;
+}
+.grid_1 {
+    width: 200px;
+}
+[class*="grid_"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+}
+.post3 .label {
+    width: 180px;
+    height: 60px;
+    border-radius: 100px;
+    text-align: center;
+    font: 300 20px/60px "Open Sans",sans-serif;
+    color: #fff;
+    background: #DC3939;
+    display: block;
+    -webkit-box-shadow: 0 -4px 0 0 #291010 inset;
+    box-shadow: 0 -4px 0 0 #291010 inset;
+}
+
+.post3 {
+    margin-top: 100px;
+}
+
+#work , #skills{
+    width: 1220px;
+    margin: 0 auto;
+    clear: both;
+    float: none;
+}
+
+#work .content{
+	padding-top:65px;
+	    width: 100%;
+    float: left;
+}
+
+#work h3{
+	color:#6a6969;
+	font-size: 18px;
+	line-height: 27px;
+    margin-bottom: 5px;
+}
+
+#work p{
+	font-size:16px;
+	    line-height: 24px;
+    margin-top: 10px;
 }
