@@ -1,0 +1,98 @@
+body{
+	margin:0px;
+	color:#fff;
+	background:#000;
+}
+
+.home{
+	min-height:600px;
+	background:#000;
+}
+
+.container{
+	width:100%;
+	padding:0px 0px 0px 0px;
+}
+
+.profile-pic{
+	width:170px;
+	height:300px;
+	border:10px solid #fff;
+	border-radius:10px 10px 10px 10px;
+	-webkit-transform:rotate(27deg);
+	position:relative;
+	left:0px;
+	float:left;
+}
+
+
+.profile-pic:hover{
+	width:350px;
+	height:500px;
+	-webkit-transform:rotate(27deg);
+}
+
+.profile-pic img{
+	max-width:100%;
+}
+
+.name,.tagline{
+	display:none;
+	color:#fff;
+	font-style:italic;
+	font-size:65px;
+    display: none;
+    color: #fff;
+    font-style: italic;
+    font-size: 35px;
+    position: relative;
+    top: 230px;
+    left: 180px;
+}
+
+.tagline{
+	font-style:35px;
+	top:240px;
+}
+
+.about{
+	background-color:#000;
+	color:#fff;
+	z-index:1001;
+}
+
+.sub-sections{
+	height:300px;
+	margin:0 auto;
+}
+.image-left{
+	float:left;
+	width:240px;
+	height:240px;
+	background-size:contain !important;
+	margin:10px 20px 30px 60px;
+	border-radius:40px;
+}
+
+.text-right{
+	font-size:28px;
+	float:left;
+	padding:0px 0px 0px 0px;
+}
+
+.profession .image-left{
+	background:url("../images/profession.png");
+}
+
+.education .image-left{
+	background:url("../images/education.jpg");
+	    background-position: 20px 0px;
+}
+
+.skills .image-left{
+	background:url("../images/skills.jpg");
+}
+
+.interests .image-left{
+	background:url("../images/interests.jpg");
+}
